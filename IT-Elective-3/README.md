@@ -28,3 +28,14 @@ A simple ToDo List with CRUD Operations using DJANGO REST FRAMEWORK.
 ## Running the server
 
     python manage.py runserver
+
+## URLS
+
+    CREATE
+    http://localhost:8000/create/
+    READ
+    http://localhost:8000/todo-list/
+    UPDATE
+    http://localhost:8000/todo-list/id/
+    DELETE
+    http://localhost:8000/delete/id/
