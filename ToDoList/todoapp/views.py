@@ -14,7 +14,7 @@ class DetailTodo(generics.RetrieveUpdateAPIView):
     queryset = ToDo.objects.all()
     serializer_class = ToDoSerializer
 #POST
-class CreateTodo(generics.CreateAPIView):
+class CreateTodo(generics.ListCreateAPIView):
     queryset = ToDo.objects.all()
     serializer_class = ToDoSerializer
 #DELETE
