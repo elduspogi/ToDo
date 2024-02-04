@@ -34,7 +34,7 @@ A simple ToDo List with CRUD Operations using DJANGO REST FRAMEWORK.
 ## URLS
 
     CREATE
-    http://localhost:8000/create/
+    http://localhost:8000/todo-list/create/
     READ
     http://localhost:8000/todo-list/
     UPDATE
