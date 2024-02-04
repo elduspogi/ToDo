@@ -19,15 +19,17 @@ A simple ToDo List with CRUD Operations using DJANGO REST FRAMEWORK.
 
     pip install -r requirements.txt
 
-    python manage.py migrate
+    
+    path-to-where-manage.py-is-located\python manage.py makemigrations
+    path-to-where-manage.py-is-located\python manage.py migrate
 
 ## Creating Superuser
 
-    python manage.py createsuperuser
+     path-to-where-manage.py-is-located\python manage.py createsuperuser
 
 ## Running the server
 
-    python manage.py runserver
+     path-to-where-manage.py-is-located\python manage.py runserver
 
 ## URLS
 
