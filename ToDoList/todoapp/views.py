@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
+from rest_framework.response import Response
 from .serializers import *
 from .models import *
 
@@ -20,3 +21,8 @@ class CreateTodo(generics.CreateAPIView):
 class DeleteTodo(generics.DestroyAPIView):
     queryset = ToDo.objects.all()
     serializer_class = ToDoSerializer
+
+    def get(self, request, *args, **kwargs):
+        instance = self.get_object()
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
